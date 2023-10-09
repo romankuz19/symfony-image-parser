@@ -4,13 +4,17 @@
 1. Склонировать приложение из репозитория
 2. Выполнить
 ````
-composer install
+composer install && npm install
 ````
-3. Запустить приложение
+3. Выполнить скрипт
+````
+npm run watch
+````
+4. Запустить приложение
 ````
 symfony server:start -d
 ````
-4. Перейти по адресу http://localhost:8000
+5. Перейти по адресу http://localhost:8000
 
 Скриншоты приложения
 ![image](https://github.com/romankuz19/symfony-image-parser/assets/80103795/cdf01386-2dd1-493a-99df-0c575c8ceb30)
