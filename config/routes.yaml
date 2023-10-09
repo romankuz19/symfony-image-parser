@@ -1,0 +1,6 @@
+home:
+    path: /
+    controller: App\Controller\HomeController::index
+parse-images:
+    path: /api/v1/parse-images/{url}
+    controller: App\Controller\ParseImagesFromUrlController::index
