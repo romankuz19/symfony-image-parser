@@ -24,18 +24,15 @@
 </template>
 
 <script setup>
-import {ref, computed} from 'vue'
+import {ref} from 'vue'
 import axios from "axios";
 import ShowImages from "./ShowImages.vue";
 
 const url = ref("")
+const endpoint = 'http://localhost:80/api/v1/parse-images/'
 
 let images = ref([])
 let totalWeight = ref(-1)
-// let paths = computed(()=>{
-//   // console.log('work paths = computed')
-//   return paths1.value
-// })
 let isHidden = ref(true)
 
 function isUrlValid(string) {
@@ -54,10 +51,8 @@ async function getImagesUrl(e) {
     alert('Введите корректный URL')
   } else {
       try {
-        // POST request using axios with async/await
         let escapedUrl = url.value.replace(/\//g, "*")
-        const response = await axios.get("http://localhost:8000/api/v1/parse-images/".concat(escapedUrl));
-        console.log(response.data);
+        const response = await axios.get(endpoint.concat(escapedUrl));
         images.value = response.data.images
         totalWeight.value = response.data.totalWeight
       } catch (error) {
