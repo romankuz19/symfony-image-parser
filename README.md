@@ -6,7 +6,7 @@
 ````
 make install
 ````
-5. Перейти по адресу http://localhost:80
+3. Перейти по адресу http://localhost:80
 
 Скриншоты приложения
 ![image](https://github.com/romankuz19/symfony-image-parser/assets/80103795/cdf01386-2dd1-493a-99df-0c575c8ceb30)
