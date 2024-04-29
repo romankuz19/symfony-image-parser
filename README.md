@@ -1,20 +1,12 @@
 ### Приложение "image-parser" на Symfony + Vue 3
 
-Для запуска необходимо **PHP8** и **Symfony**, а также наличие **composer** и **npm**.
+Для запуска необходимо **docker-compose**
 1. Склонировать приложение из репозитория
-2. Выполнить установку пакетов и зависимостей
+2. Выполнить команду
 ````
-composer install && npm install
+make install
 ````
-3. Выполнить скрипт
-````
-npm run watch
-````
-4. Запустить приложение
-````
-symfony server:start -d
-````
-5. Перейти по адресу http://localhost:8000
+5. Перейти по адресу http://localhost:80
 
 Скриншоты приложения
 ![image](https://github.com/romankuz19/symfony-image-parser/assets/80103795/cdf01386-2dd1-493a-99df-0c575c8ceb30)
